@@ -1,0 +1,110 @@
+{% extends 'flatpages/default.html' %}
+<!-- seo -->
+{% block seo %}
+
+{% endblock seo %}
+{% load static %}
+{% block content %}
+
+        <section class="banner __shortened">
+            <img class="background" src="{% static 'images/SecondBanner/LooperGroup_2 2.svg' %}" alt="img">
+            <div class="content">
+                <div class="info-block">
+                    <h2>{{ flatpage.content }}</h2>
+                   <div class="button"><button onclick="openPopup('.popup._popup-form')">Получить предложение</button></div>
+                </div>
+            </div>
+        </section>
+{% include "flatpages/elements/popup_form.html" %}
+{% include 'flatpages/elements/general_advantages.html' %}
+
+        <section class="services">
+            <div class="content">
+                <h3>Услуги</h3>
+
+                <div class="grid">
+                    <div class="item">
+                       <h4>Архитектурное проектирование</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Разработка проектной документации</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Подготовка архитектурного проекта сооружений, зданий</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Организация процесса строительства</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Изготовление дизайн-проекта помещений</li>
+                        </ul>
+                        <div class="button"><a href="{% url 'architecture' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Проектирование конструкций </h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Прием и анализ задания на проектирование</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Экспертиза проекта, согласование в надзорных органах </li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Подготовка и сбор разрешительной документации</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Разработка проекта производства работ </li>
+                        </ul>
+                        <div class="button"><a href="{% url 'construction_permits' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Проекты инженерных систем</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Водоснабжение и канализация</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Вентиляция и кондиционирование</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Отопление</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Электрооборудование и лаборатория</li>
+                        </ul>
+                        <div class="button"><a href="{% url 'engineering_projects' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Согласование перепланировки</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Разработка проекта перепланировки</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Разработка технического плана</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Подготовка и сбор разрешительной документации</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Разработка проекта производства работ </li>
+                        </ul>
+                        <div class="button"><a href="{% url 'planning_approval' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Согласование в Росреестре</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Проект перепланировки</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Технический план</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Межевой план</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Кадастровая деятельность</li>
+                        </ul>
+                        <div class="button"><a href="{% url 'rosreestr_approval' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Согласование в Росстройнадзоре</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Изменение назначения землепользования</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Получение разрешений на строительство</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Согласование градосроительного облика постройки</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Разработка проекта производства работ </li>
+                        </ul>
+                        <div class="button"><a href="{% url 'rosstroy_approval' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Подбор объектов недвижимости</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Подбор земельных участков</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Подбор зданий и помещений</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Организация процесса строительства</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Изготовление дизайн-проекта помещений</li>
+                        </ul>
+                        <div class="button"><a href="{% url 'real_estate_selection' %}">Подробнее</a></div>
+                    </div>
+                    <div class="item">
+                        <h4>Дизайн-проектирование</h4>
+                        <ul>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Дизайн интерьера</li>
+                            <li><img src="{% static 'images/services/checkMark.svg' %}" alt="vector">Архитектурное проектирование</li>
+                        </ul>
+                        <div class="button"><a href="{% url 'design_engineering' %}">Подробнее</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% include 'flatpages/elements/faq.html' %}
+{% include 'flatpages/elements/form_under_footer.html' %}
+
+{% endblock content %}

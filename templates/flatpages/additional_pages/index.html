@@ -1,0 +1,115 @@
+{% extends 'flatpages/default.html' %}
+{% load static %}
+{% block content %}
+<section class="banner __hero">
+            <img class="background" src="{% static 'images/SecondBanner/LooperGroup_2 2.svg' %}" alt="img">
+            <div class="content">
+                <h1>СФЕРА - инжиниринговая компания <br>полного цикла - от проектирования <br>до обслуживания</h1>
+                <div class="info-block">
+                    <p>Осуществляем работы по внутренним инженерным системам, сетям и коммуникациям зданий и сооружений под ключ в Москве и МО</p>
+                     <div class="button"><button onclick="openPopup('.popup._popup-form')">Получить предложение</button></div>
+                    {% include "flatpages/elements/popup_form.html" %}
+                </div>
+            </div>
+        </section>
+
+{% include 'flatpages/elements/general_advantages.html' %}
+
+        <section class="advantages">
+            <div class="content">
+                <h3>Работая с нами, вы получаете <span>массу преимуществ</span></h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/advantages/1.svg' %}" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/2.svg' %}" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/3.svg' %}" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/4.svg' %}" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/5.svg' %}" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/6.svg' %}" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="benefit">
+            <img class="background" src="{% static 'images/benefit/LooperGroup_3 1.svg' %}" alt="img">
+            <div class="content">
+                <h3>Ваша выгода в цифрах:</h3>
+                <div class="grid">
+                    <div class="item">
+                        <p>на<span>6%</span></p>
+                        <img src="{% static 'images/benefit/progress.svg' %}" alt="vector">
+                        <p>Снижаем затраты на реализацию и эксплуатацию систем</p>
+                    </div>
+                    <div class="item">
+                        <p>на<span>32%</span></p>
+                        <img src="{% static 'images/benefit/progress.svg' %}" alt="vector">
+                        <p>Снижаем затраты на реализацию и эксплуатацию систем</p>
+                    </div>
+                    <div class="item">
+                        <p>на<span>6%</span></p>
+                        <img src="{% static 'images/benefit/progress.svg' %}" alt="vector">
+                        <p>Снижаем затраты на реализацию и эксплуатацию систем</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="team">
+            <div class="content">
+                <h3>Наша<span> команда</span></h3>
+
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/team/team1.png' %}" alt="team">
+                        <p>Анна Гофман</p>
+                        <span>Проектировщик</span>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/team/team2.png' %}" alt="team2">
+                        <p>Александр Беркут</p>
+                        <span>Проектировщик</span>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/team/team3.png' %}" alt="team3">
+                        <p>Анатолий Вахтин</p>
+                        <span>Проектировщик</span>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/team/team4.png' %}" alt="team4">
+                        <p>Дмитрий Царев</p>
+                        <span>Проектировщик</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{% include 'flatpages/elements/form_under_footer.html' %}
+{% include 'flatpages/elements/faq.html' %}
+
+{% endblock content %}

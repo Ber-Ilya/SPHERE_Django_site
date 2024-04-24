@@ -1,0 +1,80 @@
+.faq{
+     margin: 100px 0;
+     @media only screen and (max-width: 1023px) {
+        margin-top: 60px;
+     }
+    .grid{
+        margin-top: 30px;
+        display: grid;
+        row-gap: 20px;
+    }
+    summary::-webkit-details-marker{display:none;}
+    summary::-moz-list-bullet{list-style-type:none;}
+    summary::marker{display:none;}
+    details{
+        border-radius: 20px;
+        background: #0E0F14;
+
+        padding: 23px 30px;
+        transition: all .3s;
+        
+        // @media only screen and (max-width: 1439px) {
+        //     padding: 18px 12px;
+        // }
+        *{
+            transition: .3s;
+            &:hover{
+                transition: .3s;
+            }
+        }
+        &[open]{
+            img{
+                transform: rotate(135deg);
+            }
+            p{
+                &:nth-child(2){
+                    transform: translateY(0%);
+                    @media only screen and (max-width: 1023px) {
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+
+
+        summary{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h5{
+                font-size: 20px;
+                line-height: 24px;
+                padding-right: 16px;
+                color: #ffffff;
+                font-family: g-m;
+                @media only screen and (max-width: 1023px) {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+            img{
+                cursor: pointer;
+                @media only screen and (max-width: 1439px) {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 20px;
+            max-width: 70%;
+            margin-bottom: 12px;
+            color: #fff;
+            @media only screen and (max-width: 1023px) {
+                font-size: 15px;
+            }
+        }
+    }
+}

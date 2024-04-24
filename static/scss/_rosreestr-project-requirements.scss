@@ -1,0 +1,32 @@
+.rosreestr-project-requirements{
+    margin-top: 100px;
+    background: #F5F7F9;
+    overflow: hidden;
+    @media only screen and (max-width: 1023px) {margin-top: 64px;}
+    border-radius: 20px;
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        
+        align-items: center;
+    }
+
+    .info-block{
+        h3{
+            color: #EA3838;
+        }
+        p{
+            margin-top: 30px;
+            color: #1B1B1B;
+            font-size: 20px;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 409px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}

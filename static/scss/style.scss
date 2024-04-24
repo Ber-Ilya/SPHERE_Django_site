@@ -1,0 +1,129 @@
+@font-face {
+    font-family: g-r;
+    src: url(../fonts/Gilroy-Regular.woff);
+
+}
+@font-face {
+    font-family: g-m;
+    src: url(../fonts/Gilroy-Medium.woff);
+}
+@font-face {
+    font-family: i-l;
+    src: url(../fonts/Inter-Light.ttf);
+}
+@font-face {
+    font-family: i-r;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: i-m;
+    src: url(../fonts/Inter-Medium.ttf);
+
+}
+@font-face {
+    font-family: i-b;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+
+// Colors
+
+// - Neutral
+$Black: #18191F;
+$D_Grey: #4D4D4D;
+$Grey: #717171;
+$L_Grey: #89939E;
+$Grey-blue: #ABBED1;
+$Silver: #F5F7FA;
+$White: #FFFFFF;
+
+$Primary: #28CB8B;
+$Secondary: #263238;
+$Info: #2194f3;
+
+// - Color Shade
+
+$Shade1: #43A046;
+$Shade2: #388E3B;
+$Shade3: #237D31;
+$Shade4: #1B5E1F;
+$Shade5: #103E13;
+
+// - Color Tint
+
+$Tint1: #66BB69;
+$Tint2: #81C784;
+$Tint3: #A5D6A7;
+$Tint4: #C8E6C9;
+$Tint5: #E8F5E9;
+
+// - Action
+
+$Warning: #FBC02D;
+$Error: #E53835;
+$Success: #2E7D31;
+
+$topSectionNoteBook_L: 100px;
+
+$topSectionwindowTablet: 72px;
+
+// Настройка интерфейса экрана
+
+$windowNotebook_L: 1400px;
+$windowNotebook: 980px;
+$windowTablet: 650px; 
+// change
+$windowMobile: 344px+120px;
+
+@import 'header';
+@import 'footer';
+
+@import 'interface';
+
+
+@import 'contact';
+@import 'faq';
+
+@import 'popup';
+
+
+
+@import 'banner';
+@import 'limiter';
+@import 'advantages';
+@import 'benefit';
+@import 'team';
+
+@import 'services';
+
+@import 'cases';
+
+@import 'reviews';
+
+@import 'blog';
+
+@import 'complex-design-services';
+@import 'service-cost';
+@import 'implemented-projects';
+
+@import 'full-service-offering';
+
+@import 'rosreestr-approval-process';
+@import 'rosreestr-documents';
+@import 'rosreestr-project-requirements';
+@import 'timeline-cost';
+
+@import 'about';
+@import 'work-process';
+
+@import 'completed-projects';
+
+@import 'services-offered';
+
+@import 'process-change';
+
+@import 'not-found-page';
+
+@import 'thank';
+
+@import 'service-dropmenu';

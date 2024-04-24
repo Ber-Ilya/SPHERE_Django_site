@@ -1,0 +1,42 @@
+{% extends 'flatpages/default.html' %}
+{% load static %}
+{% block content %}
+
+        <section class="banner _half">
+            <img class="background" src="{% static 'images/case/LooperGroup_3.svg' %}" alt="img">
+            <div class="content">
+                <div class="info-block">
+                    <h3>Выполненные работы</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="cases">
+            <div class="content">
+                <div class="item">
+                    <img src="{% static 'images/case/Rectangle 677.png' %}" alt="casge__images">
+                    <h4>Штаб квартира "Фарпост"</h4>
+                    <p>Система воздушного отопления</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'images/case/Rectangle 677-1.png' %}" alt="casge__images">
+                    <h4>Штаб квартира "Фарпост"</h4>
+                    <p>Система воздушного отопления</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'images/case/Rectangle 677-2.png' %}" alt="casge__images">
+                    <h4>Штаб квартира "Фарпост"</h4>
+                    <p>Система воздушного отопления</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'images/case/Rectangle 677-3.png' %}" alt="casge__images">
+                    <h4>Штаб квартира "Фарпост"</h4>
+                    <p>Система воздушного отопления</p>
+                </div>
+
+            </div>
+        </section>
+
+
+{% include 'flatpages/elements/form_and_image.html' %}
+{% endblock content %}

@@ -1,0 +1,101 @@
+.service-cost{
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+    padding: 100px 0;
+    background: #1B1B1B;
+    
+    @media only screen and (max-width: 1023px) {
+        margin-top: 64px;
+        padding: 64px 0;
+    }
+    .looper{
+        position: absolute;
+        // inset: 0;
+        width: 100%;
+        // height: 524px;
+        object-fit: cover;
+
+        left: 0;
+        
+        top: 0;
+        transform: translateY(35%);
+    }
+
+    .content{
+        position: relative;
+        z-index: 1;
+    }
+    h3{
+        color: #fff;
+        text-align: center;
+    }
+
+    .grid{
+        margin-top: 40px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+
+        @media only screen and (max-width: 1023px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media only screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .item{
+        border-radius: 20px;
+        background: #fff;
+
+        padding: 64px 30px;
+        @media only screen and (max-width: 1023px) {
+            padding: 42px 24px;
+        }
+        .line{
+            width: 100%;
+            height: 4px;
+            border-radius: 10px;
+
+            margin: 32px 0;
+            background: #E7E7E7;
+            @media only screen and (max-width: 767px) {
+                margin: 14px 0;
+            }
+        }
+
+        h4{
+            font-size: 20px;
+            color: #1B1B1B;
+            font-family: g-m;   
+            @media only screen and (max-width: 767px) {
+                font-size: 18px;
+            }
+        }
+
+        p{
+            font-family: g-m;
+            color: #4A4A48;
+        }
+    }
+
+    .button{
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: center;
+
+        button{
+            font-size: 20px;
+            padding: 14px 32px;
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+        }
+    }
+}

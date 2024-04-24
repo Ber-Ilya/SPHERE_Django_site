@@ -1,0 +1,21 @@
+<svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow_right.svg" clip-path="url(#clip0_12_6907)">
+<g id="Clip path group">
+<mask id="mask0_12_6907" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="49" height="48">
+<g id="clip0_391_1102">
+<path id="Vector" d="M48.8101 24C48.8101 10.7452 38.0649 0 24.8101 0C11.5552 0 0.810059 10.7452 0.810059 24C0.810059 37.2548 11.5552 48 24.8101 48C38.0649 48 48.8101 37.2548 48.8101 24Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_12_6907)">
+<g id="Group">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M24.8101 48C38.0649 48 48.8101 37.2548 48.8101 24C48.8101 10.7452 38.0649 0 24.8101 0C11.5553 0 0.810059 10.7452 0.810059 24C0.810059 37.2548 11.5553 48 24.8101 48ZM22.944 15.3766C22.4558 14.8745 21.6644 14.8745 21.1762 15.3766C20.6881 15.8787 20.6881 16.6927 21.1762 17.1949L27.7923 24L21.1762 30.8051C20.6881 31.3073 20.6881 32.1213 21.1762 32.6234C21.6644 33.1255 22.4558 33.1255 22.944 32.6234L30.444 24.9091C30.9321 24.407 30.9321 23.593 30.444 23.0909L22.944 15.3766Z" fill="#446B73"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_12_6907">
+<rect width="48" height="48" fill="white" transform="translate(0.810059)"/>
+</clipPath>
+</defs>
+</svg>

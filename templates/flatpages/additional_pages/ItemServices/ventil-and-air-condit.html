@@ -1,0 +1,167 @@
+{% extends 'flatpages/default.html' %}
+{% block seo %}
+    <meta name="title" content="Системы вентиляции – Проектирование, Установка и Обслуживание">
+    <meta name="description" content="Мы предоставляем полный спектр услуг по системам вентиляции, включая проектирование, установку, обслуживание и поставку оборудования от ведущих производителей.">
+    <meta name="keywords" content="системы вентиляции, проектирование вентиляции, установка вентиляции, обслуживание вентиляции, сплит-системы, мульти-системы, чистка кондиционеров">
+{% endblock seo %}
+{% load static %}
+{% block content %}
+
+        <section class="banner __duble">
+            <div class="content">
+                <div class="info-block">
+                    <h2>Вентиляция и кондиционирование</h2>
+                    <div class="button"><button onclick="openPopup('.popup._popup-form')">Получить предложение</button></div>
+                    {% include "flatpages/elements/popup_form.html" %}
+                </div>
+                <div class="image"><img src="{% static 'images/ItemServices/Rectangle 28-1.png' %}" alt="img"></div>
+            </div>
+        </section>
+
+        <section class="services-offered cv-6">
+            <div class="content">
+                <h3>Предоставляем комплекс услуг</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 9.png' %}" alt="g">
+                        <p>Проектирование и установка систем вентиляции для жилых, коммерческих и промышленных объектов</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 10.png' %}" alt="g">
+                        <p>Обслуживание и ремонт существующих систем вентиляции</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 11.png' %}" alt="g">
+                        <p>Поставка оборудования от ведущих производителей</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 9-1.png' %}" alt="g">
+                        <p>Установка сплит-систем и мульти-систем для поддержания комфортного климата в помещениях любого размера</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 10-1.png' %}" alt="g">
+                        <p>Техническое обслуживание и чистка кондиционеров</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 11-1.png' %}" alt="g">
+                        <p>Подбор оптимальных решений для климатических условий конкретного объекта</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 9-2.png' %}" alt="g">
+                        <p>Консультации специалистов по вопросам вентиляции и кондиционирования</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 10-2.png' %}" alt="g">
+                        <p>Гарантированное качество и надежность наших услуг</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 11-2.png' %}" alt="g">
+                        <p>Подбор оптимальных решений для климатических условий конкретного объекта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="rosreestr-approval-process cv-6">
+            <div class="content">
+                <h3>Как мы работаем</h3>
+                <div class="row">
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec.svg' %}" alt="vector" class="vector">
+                        <h4>Консультация и расчеты</h4>
+                        <p>Наши специалисты проводят детальную консультацию с клиентом, выясняют его потребности и особенности объекта.
+                            Производится расчет необходимого оборудования и стоимости работ.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec2.svg' %}" alt="vector" class="vector">
+                        <h4>Проектирование</h4>
+                        <p>Наша команда инженеров разрабатывает индивидуальный проект вентиляционной или кондиционирования системы, учитывая все требования клиента и особенности помещения.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec3.svg' %}" alt="vector" class="vector">
+                        <h4>Установка</h4>
+                        <p>Профессиональные монтажники устанавливают оборудование согласно разработанному проекту, соблюдая все нормы и стандарты безопасности.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec4.svg' %}" alt="vector" class="vector">
+                        <h4>Тестирование и настройка</h4>
+                        <p>После установки проводится тестирование системы на работоспособность и корректировка настроек для достижения оптимальной производительности.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec5.svg' %}" alt="vector" class="vector">
+                        <h4>Обслуживание и поддержка</h4>
+                        <p>Мы предлагаем долгосрочное обслуживание системы, включая ежегодную проверку и регулярную техническую поддержку.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec6.svg' %}" alt="vector" class="vector">
+                        <h4>Обучение и инструктаж</h4>
+                        <p>После установки системы наши специалисты проводят обучение клиентов или персонала по правильному использованию оборудования и основам его обслуживания.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="implemented-projects">
+            <div class="content">
+                <h3>Реализованные проекты</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 43.png' %}" alt="img">
+                        <p>Завод по производству стальных панельных радиаторов</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 44.png' %}" alt="img">
+                        <p>Проект на реконструкцию производственного здания</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 45.png' %}" alt="img">
+                        <p>Проект склада площадью до 1500 м.кв. в п. Щепкин, Ростовской области</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages __change">
+            <div class="content">
+                <h3>Мы качественно следим за каждым этапом работы, чтобы результат был идеален</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/advantages/1.svg' %}" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/2.svg' %}" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/3.svg' %}" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/4.svg' %}" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/5.svg' %}" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/6.svg' %}" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% include 'flatpages/elements/faq.html' %}
+{% include 'flatpages/elements/form_and_image.html' %}
+{% endblock content %}

@@ -1,0 +1,146 @@
+@mixin fixTop(){
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+
+ row-gap: 28px;
+}
+.reviews{
+    margin-top: 100px;
+    @media only screen and (max-width: 1023px) {margin-top: 64px;}
+
+    .chat{
+        margin-top: 24px;
+        
+        @include fixTop();
+    }
+
+    .hero-rating{
+        margin-bottom: 24px;
+        display: flex;
+        align-items: end;
+        column-gap: 8px;
+        h3{
+            font-weight: 600;
+            margin-bottom: -7px;
+        }
+    }
+
+    .chat-block{
+        display: grid;
+
+        grid-template-columns: 32px 1fr;
+        column-gap: 10px;
+
+        .chat-avatar{
+            img{
+                object-fit: contain
+            }
+        }
+
+        h6{
+            font-family: g-m;
+        }
+        .grade-block{
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+
+            color: #656565;
+        }
+    }
+    
+
+
+
+    .chat-description{
+        @include fixTop();
+        row-gap: 8px;
+
+        p{
+            font-size: 14px;
+            color: #656565;
+            font-family: g-m;
+        }
+    }
+
+
+
+    .grid{
+        display: grid;
+        grid-template-columns: 737px 280px;
+        justify-content: space-between;
+        width: 100%;
+        column-gap: 120px;
+        @media only screen and (max-width: 1439px) {
+            grid-template-columns: 1fr 220px;
+            column-gap: 64px;
+        }
+        @media only screen and (max-width: 1023px) {
+            display: flex;
+            margin-top: 32px;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .chat-block__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 4px;
+
+        .comment{
+            color: #6242E1;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+
+    .reaction{
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+
+        // max-width: 280px;
+        div{
+            cursor: pointer;
+            display: flex;
+            column-gap: 4px;
+            color: #999999;
+            font-size: 14px;
+        }
+        img{
+            width: 16px;
+            height: 16px;
+        }
+        .negative{
+            img{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+
+
+    .send-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        row-gap: 14px;
+
+        max-width: 280px;
+        p{
+            font-family: g-m;
+        }
+    }
+
+    .button{
+        button{
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 0;
+        }
+    }
+
+} 

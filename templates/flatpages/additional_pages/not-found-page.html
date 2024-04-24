@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <title>Сфера</title>
+    </head>
+    <body>
+
+        <section class="not-found-page">
+            <div class="content">
+                <img src="{% static 'images/4041.svg' %}" alt="vector">
+                <img src="{% static 'images/404.svg' %}" alt="vector">
+
+                <div class="block-info">
+                    <h4>404</h4>
+                    <p>Страница не найдена</p>
+                    <div class="button"><a href="index.html">На главную</a></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content">
+                <div class="grid">
+                    <div class="logo"><a href="index.html"><img src="{% static 'images/vector/LogoWhite.svg' %}" alt="g"></a></div>
+                    <ul class="navigation">
+                        <li><a href="#about">Преимущества</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#second">Проект перепланировки</a></li>
+                        <li><a href="#faq">ЧаВо</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                    <p class="phone"><a href="tel:+7 (800) 333-85-11">+7 (800) 333-85-11</a></p>
+                    <div class="social__list">
+                        <div class="vector"><a href="">
+                            <img src="{% static 'images/vector/logos_whatsappHover.svg' %}" alt="vectorWhatsapp">
+                        </a></div>
+                        <div class="vector"><a href="">
+                            <img src="{% static 'images/vector/logos_telegramHover.svg' %}" alt="vectorTelegram">
+                        </a></div>
+                    </div>
+                </div>
+                <h6>г. Москва, ул. Свободы д. 14 пом. II</h6>
+                <div class="item">
+                    <p>© СФЕРА 2023.  Все права защищены</p>
+                    <p><a href="#rules">Пользовательское соглашение</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <script src="js/popup.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/formFormat.js"></script>
+
+    <script src="js/swiperDuble.js"></script>
+    <!-- <script src="js/animationProject.js"></script> -->
+    <script src="js/imageZoom.js"></script>
+
+</html>

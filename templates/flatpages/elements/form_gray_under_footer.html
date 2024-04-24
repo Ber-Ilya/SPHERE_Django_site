@@ -1,0 +1,28 @@
+{% load static %}
+
+<section class="contact __dark" id="contact">
+            <img class="background" src="{% static 'images/contact/LooperGroup_1 2.svg' %}" alt="line">
+            <div class="content">
+                <div class="info">
+                    <h3>Остались <span>вопросы?</span></h3>
+                    <p>Если остались вопросы, заполните форму и мы вам перезвоним</p>
+
+                </div>
+                <form class="form" action="">
+                  {% csrf_token %}
+                    <div class="row">
+                        <div class="form__group">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__group">
+                            <label for="phone">Телефон</label>
+                            <input type="text" name="phone" placeholder="+7 (---) --- -- --">
+                        </div>
+                    </div>
+                    <div class="button"><button>Оставить заявку</button></div>
+                    <span>Я соглашаюсь с условиями <span><a href="#">Политики обработки персональных данных</a></span> и <span><a href="#">Публичной офертой</a></span></span>
+
+                </form>
+            </div>
+        </section>

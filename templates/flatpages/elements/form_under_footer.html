@@ -1,0 +1,36 @@
+{% load static %}
+<section class="contact" id="contact">
+            <img class="background" src="{% static 'images/contact/LooperGroup_1 2.svg' %}" alt="line">
+            <div class="content">
+                <div class="info">
+                    <h3>Остались <span>вопросы?</span></h3>
+                    <p>Если остались вопросы, заполните форму и мы вам перезвоним</p>
+
+                </div>
+                <form class="form" action="{% url 'home' %}" method="POST">
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="form__group">
+                      <label for="name">Имя</label>
+                      <input type="text" id="id_name_under_footer" name="name_under_footer" placeholder="Ваше имя" value="{{ form.name_under_footer.value|default:'' }}">
+                      {% if form.name_under_footer.errors %}
+                        <!-- Display name field errors -->
+                        <div class="errors">{{ form.name_under_footer.errors.as_text }}</div>
+                      {% endif %}
+                    </div>
+                    <div class="form__group">
+                      <label for="phone">Телефон</label>
+                      <input type="text" id="id_phone_under_footer" name="phone_under_footer" placeholder="+7 (---) --- -- --" value="{{ form.phone_under_footer.value|default_if_none:'' }}" class="form__input phone">
+                      {% if form.phone_under_footer.errors %}
+                        <!-- Display phone field errors -->
+                        <div class="errors">{{ form.phone_under_footer.errors.as_text }}</div>
+                      {% endif %}
+                    </div>
+                  </div>
+
+                  <div class="button"><button type="submit">Оставить заявку</button></div>
+                  <span>Я соглашаюсь с условиями <a href="#">Политики обработки персональных данных</a> и <a href="#">Публичной офертой</a></span>
+                </form>
+
+            </div>
+        </section>

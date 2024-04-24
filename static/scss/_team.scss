@@ -1,0 +1,49 @@
+.team{
+    margin-top: 80px;
+
+    h3{
+        text-align: center;
+    }
+
+    .grid{
+        margin-top: 40px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+
+        @media only screen and (max-width: 1023px) {
+            display: flex;
+            scroll-behavior: smooth;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        img{
+            width: 100%;
+            height: 392px;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .item{
+        @media only screen and (max-width: 1023px) {
+            min-width: 280px;
+        }
+        display: grid;
+        row-gap: 20px;
+        font-family: g-m;
+        p{
+            font-size: 18px;
+            color: #4A4A48;
+        }
+        span{
+            font-size: 16px;
+            color: #4A4A48;
+        }
+    }
+}

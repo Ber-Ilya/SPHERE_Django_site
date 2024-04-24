@@ -1,0 +1,170 @@
+{% extends 'flatpages/default.html' %}
+    {% load static %}
+    {% block styles %}
+          <style>
+    a {
+        color: black !important; /* Устанавливает цвет всех ссылок черным */
+    }
+
+    a:hover {
+        color: #EA3838 !important; /* Цвет ссылок при наведении курсора */
+    }
+
+    a:visited {
+        color: black !important; /* Цвет посещенных ссылок */
+    }
+        .navigation > li > a:hover {
+    color: #EA3838 !important; /* Цвет ссылок при наведении курсора станет красным */
+}
+.dropdown-item {
+font-size: 16px;
+}
+        a.nav-link.dropdown-toggle {
+        font-size: 18px;}
+
+</style>
+{% endblock styles %}
+{% block content %}
+<header class="header">
+            <div class="content header__content">
+
+                <div class="header-content__basic">
+                    <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/sferaLogo.svg' %}" alt="imgLogo"></a></div>
+                   <ul class="navigation">
+                      <li><a href="{% url '/home' %}">Главная</a></li>
+                      <li><a href="{% url '/services' %}">Услуги</a></li>
+                      <li><a href="{% url '/engineering_projects' %}">Проектирование</a></li>
+                      <li><a href="{% url '/planning_approval' %}">Согласование перепланировки</a></li>
+                      <li><a href="{% url '/rosreestr_approval' %}">Строительство</a></li>
+                      <li><a href="{% url '/contacts' %}">Контакты</a></li>
+                    </ul>
+
+                   <div class="button">
+                        <div class="button"><button onclick="openPopup('.popup._popup-form')">Заказать звонок</button></div>
+                        <div class="burger__menu" onclick="toggleBurgerClass()"><img src="{% static 'images/burgerMenu.svg' %}" alt="burger"></div>
+                    </div>
+                </div>
+
+                <div class="burger">
+                    <div class="burger__content">
+                        <div class="burger-content__head">
+                            <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/sferaLogo.svg' %}" alt="imgLogo"></a></div>
+                            <button class="burger-content__close" onclick="toggleBurgerClass()"><img src="{% static 'images/closebug.svg' %}" alt="close"></button>
+                        </div>
+                        <ul class="navigation">
+                            <li><a href="{ url 'home' }" onclick="toggleBurgerClass()">Главная</a></li>
+                            <li><a href="services.html" onclick="toggleBurgerClass()">Услуги</a></li>
+                            <li><a href="case.html" onclick="toggleBurgerClass()">Примеры работ</a></li>
+                            <li><a href="reviews.html" onclick="toggleBurgerClass()">Отзывы</a></li>
+                            <li><a href="blog.html" onclick="toggleBurgerClass()">Блог</a></li>
+                            <li><a href="#contact" onclick="toggleBurgerClass()">Контакты</a></li>
+                        </ul>
+                        <p class="time">Пн-СБ с 9:00-18:00</p>
+                        <div class="phone">
+                            <div class="vector"><img src="{% static 'images/vector/phonelog.svg' %}" alt="phoneIcon"></div>
+                            <a href="tel:+7 (800) 333-85-11">+7 (800) 333-85-11</a>
+                        </div>
+                        <div class="social">
+                            <p>Мы онлайн:</p>
+                            <div class="social__list">
+                                <div class="vector"><a href="">
+                                    <img src="{% static 'images/vector/logos_whatsapp-icon.svg' %}" alt="vectorWhatsapp">
+                                    <img src="{% static 'images/vector/logos_whatsappHover.svg' %}" alt="vectorWhatsapp">
+                                </a></div>
+                                <div class="vector"><a href="">
+                                    <img src="{% static 'images/vector/logos_telegram.svg' %}" alt="vectorTelegram">
+                                    <img src="{% static 'images/vector/logos_telegramHover.svg' %}" alt="vectorTelegram">
+                                </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Все услуги -->
+    <div class="content content__services">
+                    <div class="burger-services __active">
+                              <nav class="nav justify-content-center" aria-label="Secondary navigation">
+                                <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                       Все услуги
+                                   </a>
+                                   <ul class="dropdown-menu">
+                                       <li class="dropdown-submenu"> <!-- Блок 1 -->
+                                           <a class="dropdown-item" href="#"> Проектирование
+                                               <span class="float-end custom-toggle-arrow">&#187</span>
+                                           </a>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Архитектурные решения</a></li>
+                                              <li><a class="dropdown-item" href="#">Конструктивные решения</a></li>
+                                                 <li class="dropdown-submenu"><!-- Блок 2 подменю -->
+                                                        <a class="dropdown-item" href="#"> Инженерные системы <span
+                                                    class="float-end custom-toggle-arrow">&#187</span></a>
+                                                    <ul class="dropdown-menu"> <!-- 3 подменю -->
+                                                      <li><a class="dropdown-item" href="#">Водоотведение и канализаци</a></li>
+                                                      <li><a class="dropdown-item" href="#">Системы отопления</a></li>
+                                                      <li><a class="dropdown-item" href="#">Вентиляция и кондионирования</a></li>
+                                                      <li><a class="dropdown-item" href="#">Электрооборудование и лаборатория</a></li>
+                                                      <li><a class="dropdown-item" href="#">Слаботочные системы</a></li>
+                                                    </ul>   <!-- Конец 3 подменю -->
+                                                </li><!-- Конец блока 2 подменю -->
+                                            </ul>
+                                       </li> <!-- Конец блока 1 -->
+
+
+                                        <li class="dropdown-submenu"> <!-- Блок 2 -->
+                                           <a class="dropdown-item" href="#"> Оформление документов
+                                               <span class="float-end custom-toggle-arrow">&#187</span>
+                                           </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Разработка проектов перепланировки</a></li>
+                                                <li><a class="dropdown-item" href="#">Согласование перепланировки</a></li>
+                                                <li><a class="dropdown-item" href="#">Разработка технического плана</a></li>
+                                                <li><a class="dropdown-item" href="#">Согласование в Росреестре</a></li>
+                                                <li><a class="dropdown-item" href="#">Получение разрешения на строительство</a></li>
+                                                <li><a class="dropdown-item" href="#">Изменение назначения земли</a></li>
+                                                <li><a class="dropdown-item" href="#">Изменение временного землепользования</a></li>
+                                                <li><a class="dropdown-item" href="#">Получение ГПЗУ</a></li>
+                                            </ul>
+                                        </li> <!-- Конец блока 2 -->
+
+                                        <li class="dropdown-submenu"> <!-- Блок 3 -->
+                                           <a class="dropdown-item" href="#"> Строительство складских помещений</a>
+                                        </li> <!-- Конец блока 3 -->
+
+                                        <li class="dropdown-submenu"> <!-- Блок 4 -->
+                                           <a class="dropdown-item" href="#"> Дизайн квартир и помещений</a>
+                                        </li> <!-- Конец блока 4 -->
+
+                                        <li class="dropdown-submenu"> <!-- Блок 5 -->
+                                           <a class="dropdown-item" href="#"> Ремонт квартир и помещений</a>
+                                        </li> <!-- Конец блока 5 -->
+
+                                        <li class="dropdown-submenu"> <!-- Блок 2 -->
+                                           <a class="dropdown-item" href="#"> Недвижимость
+                                               <span class="float-end custom-toggle-arrow">&#187</span>
+                                           </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Подбор помещений</a></li>
+                                                <li><a class="dropdown-item" href="#">Подбор помещений с торгов</a></li>
+                                                <li><a class="dropdown-item" href="#">Подбор помещений ДИГМ</a></li>
+                                                <li><a class="dropdown-item" href="#">Подбор земельных участов</a></li>
+                                                <li><a class="dropdown-item" href="#">Подбор земельных участов с торгов</a></li>
+                                                <li><a class="dropdown-item" href="#">Подбор земельных участов ДИГМ</a></li>
+                                            </ul>
+                                         </li> <!-- Конец блока 2 -->
+                                        </ul>
+
+
+                              </nav>
+                            <h4>Номер лицензии СРО 1217700478610</h4>
+                            <h4><a href="tel:+78003338511">8 800 333-85-11</a></h4>
+                    </div>
+
+    </div>
+        </header>
+
+{% include "flatpages/elements/popup_form.html" %}
+
+{% endblock content %}

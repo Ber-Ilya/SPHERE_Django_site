@@ -1,0 +1,143 @@
+{% extends 'flatpages/default.html' %}
+{% block seo %}
+<meta name="title" content="Дизайн-проектирование интерьеров от ООО 'СФЕРА'">
+<meta name="description" content="Индивидуальное дизайн-проектирование интерьеров и архитектурное проектирование для создания уникальных пространств.">
+<meta name="keywords" content="дизайн-проектирование, дизайн интерьера, архитектурное проектирование, интерьеры, эксклюзивный дизайн">
+{% endblock seo %}
+{% load static %}
+{% block content %}
+        <section class="banner __duble">
+            <div class="content">
+                <div class="info-block">
+                    <h2>Дизайн-<br>проектирование </h2>
+                    <p>
+                        Оказываем услуги дизайн-проектирования и разработки эскизных проектов с
+                        использованием ИИ для оптимального воплощения ваших идей в короткие сроки и по доступной цене.
+                    </p>
+                    <div class="button"><button onclick="openPopup('.popup._popup-form')">Получить предложение</button></div>
+                    {% include "flatpages/elements/popup_form.html" %}
+                </div>
+                <div class="image"><img src="{% static 'images/pages/Rectangle 28-1.jpg' %}" alt="img"></div>
+            </div>
+        </section>
+
+
+        <section class="complex-design-services">
+            <div class="content">
+                <h3>Наша компания осуществляет проектирование систем</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Водоснабжение и канализация</h4>
+                        <ul>
+                            <li>Включает в себя водопроводную сеть, насосы, резервуары и фильтры для подачи и распределения воды</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Вентиляция и кондиционирование</h4>
+                        <ul>
+                            <li>Комплексная климатическая система, состоящая из систем: вентиляции и кондиционирования</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Отопление</h4>
+                        <ul>
+                            <li>Комплекс инженерных решений и оборудования для регулирования температуры в помещениях</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Электроснабжения и освещения</h4>
+                        <ul>
+                            <li>Включает в себя источники энергии, электрическую проводку, осветительные приборы и регулирующие устройства</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="completed-projects">
+            <div class="content">
+                <h3>Реализованные проекты</h3>
+
+                <div class="grid">
+                    <div class="swiper myProjectSwiper-1">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/sokolovo/Rectangle 54.png' %}" alt="image"></div></div>
+                          <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/sokolovo/Rectangle 54-1.png' %}" alt="image"></div></div>
+                          <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/sokolovo/Rectangle 54-2.png' %}" alt="image"></div></div>
+                          <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/sokolovo/Rectangle 54-3.png' %}" alt="image"></div></div>
+                          <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/sokolovo/Rectangle 54-4.png' %}" alt="image"></div></div>
+                          <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/sokolovo/Rectangle 54-5.png' %}" alt="image"></div></div>
+                        </div>
+                        <p>Квартира Сколково</p>
+                        <div class="swiper-pagination"></div>
+                      </div>
+
+                      <div class="swiper myProjectSwiper-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/altufevo/Rectangle 54.png' %}" alt="image"></div></div>
+                            <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/altufevo/Rectangle 54-1.png' %}" alt="image"></div></div>
+                            <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/altufevo/Rectangle 54-2.png' %}" alt="image"></div></div>
+                            <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/altufevo/Rectangle 54-3.png' %}" alt="image"></div></div>
+                            <div class="swiper-slide"><div class="image"><img src="{% static 'images/pages/altufevo/Rectangle 54-4.png' %}" alt="image"></div></div>
+                        </div>
+                          <p>Алтуфьево</p>
+                        <div class="swiper-pagination"></div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages __change">
+            <div class="content">
+                <h3>Мы качественно следим за каждым этапом работы, чтобы результат был идеален</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/advantages/1.svg' %}" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/2.svg' %}" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/3.svg' %}" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/4.svg' %}" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/5.svg' %}" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/6.svg' %}" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% include 'flatpages/elements/faq.html' %}
+{% include 'flatpages/elements/black_form.html' %}
+{% endblock content %}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Сфера</title>
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="content header__content"> 
+
+                <div class="header-content__basic">
+                    <div class="logo"><a href="index.html"><img src="images/sferaLogo.svg" alt="imgLogo"></a></div>
+                    
+                    <ul class="navigation">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="case.html">Примеры работ</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="faq.html">ЧАВО</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        
+                    </ul>
+                    <div class="button">
+                        <button onclick="popupSetting()">Заказать звонок</button>
+                        <div class="burger__menu" onclick="toggleBurgerClass()"><img src="images/burgerMenu.svg" alt="burger"></div>
+                    </div>
+                </div>
+
+                <div class="burger">
+                    <div class="burger__content">
+                        <div class="burger-content__head">
+                            <div class="logo"><a href="index.html"><img src="images/sferaLogo.svg" alt="imgLogo"></a></div>
+                            <button class="burger-content__close" onclick="toggleBurgerClass()"><img src="images/closebug.svg" alt="close"></button>
+                        </div>
+                        <ul class="navigation">
+                            <li><a href="index.html" onclick="toggleBurgerClass()">Главная</a></li>
+                            <li><a href="services.html" onclick="toggleBurgerClass()">Услуги</a></li>
+                            <li><a href="case.html" onclick="toggleBurgerClass()">Примеры работ</a></li>
+                            <li><a href="reviews.html" onclick="toggleBurgerClass()">Отзывы</a></li>
+                            <li><a href="blog.html" onclick="toggleBurgerClass()">Блог</a></li>
+                            <li><a href="faq.html" onclick="toggleBurgerClass()">ЧАВО</a></li>
+                            <li><a href="#contact" onclick="toggleBurgerClass()">Контакты</a></li>
+                        </ul>
+                        <p class="time">Пн-СБ с 9:00-18:00</p>
+                        <div class="phone">
+                            <div class="vector"><img src="images/vector/phonelog.svg" alt="phoneIcon"></div>
+                            <a href="tel:+7 (800) 333-85-11">+7 (800) 333-85-11</a>
+                        </div>
+                        <div class="social">
+                            <p>Мы онлайн:</p>
+                            <div class="social__list">
+                                <div class="vector"><a href="">
+                                    <img src="images/vector/logos_whatsapp-icon.svg" alt="vectorWhatsapp">
+                                    <img src="images/vector/logos_whatsappHover.svg" alt="vectorWhatsapp">
+                                </a></div>
+                                <div class="vector"><a href="">
+                                    <img src="images/vector/logos_telegram.svg" alt="vectorTelegram">
+                                    <img src="images/vector/logos_telegramHover.svg" alt="vectorTelegram">
+                                </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="content content__services">
+                    <div class="burger-services __active">
+                        <div class="burger-services__vectors" onclick="serviceDropOnClick()">
+                            <img src="images/halfBug.svg" alt="vector">
+                            <img src="images/halfBugClose.svg" alt="vector">
+                        </div>
+                        <p onclick="serviceDropOnClick()">Все услуги</p>
+                        <div class="burger-services__drop-menu">
+                            <h4>Услуги</h4>
+                            <div class="catalog__item">
+                                <p>Оригинальные запчасти</p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="MainMenu__arrowIcon___2qdky"><g clip-path="url(#clip0_1996_5621)"><rect x="2.81454" y="4.58582" width="9.33333" height="2" rx="1" transform="rotate(45 2.81454 4.58582)" fill="currentColor"></rect><rect x="14.5997" y="6" width="9.33333" height="2" rx="1" transform="rotate(135 14.5997 6)" fill="currentColor"></rect></g><defs><clipPath id="clip0_1996_5621"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                <ul>
+                                    <h4>Оригинальные запчасти
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="MainMenu__arrowIcon___2qdky"><g clip-path="url(#clip0_1996_5621)"><rect x="2.81454" y="4.58582" width="9.33333" height="2" rx="1" transform="rotate(45 2.81454 4.58582)" fill="currentColor"></rect><rect x="14.5997" y="6" width="9.33333" height="2" rx="1" transform="rotate(135 14.5997 6)" fill="currentColor"></rect></g><defs><clipPath id="clip0_1996_5621"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    </h4>
+                                
+                                    <li><a href="">Каталог китайских автомобилей</a></li>
+                                    <li><a href="">Каталог корейских автомобиле</a>й</li>
+                                    <li><a href="">Каталог японских автомобилей</a></li>
+                                    <li><a href="">Каталог американских автомобилей</a></li>
+                                    <li><a href="">Каталог мототехники</a></li>
+                                    <li><a href="">Каталог запчастей для тракторов</a></li>
+                                    <li><a href="">Каталог запчастей для грузовиков</a></li>
+                                    <li><a href="">Каталог запчастей для двигателей</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="catalog__item">
+                                <p>Ори2гинал2ьные запчасти</p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="MainMenu__arrowIcon___2qdky"><g clip-path="url(#clip0_1996_5621)"><rect x="2.81454" y="4.58582" width="9.33333" height="2" rx="1" transform="rotate(45 2.81454 4.58582)" fill="currentColor"></rect><rect x="14.5997" y="6" width="9.33333" height="2" rx="1" transform="rotate(135 14.5997 6)" fill="currentColor"></rect></g><defs><clipPath id="clip0_1996_5621"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                
+                                <ul>
+                                    <h4>Оригинальные запчасти2 
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="MainMenu__arrowIcon___2qdky"><g clip-path="url(#clip0_1996_5621)"><rect x="2.81454" y="4.58582" width="9.33333" height="2" rx="1" transform="rotate(45 2.81454 4.58582)" fill="currentColor"></rect><rect x="14.5997" y="6" width="9.33333" height="2" rx="1" transform="rotate(135 14.5997 6)" fill="currentColor"></rect></g><defs><clipPath id="clip0_1996_5621"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>
+                                    </h4>
+                                    
+                                    <li><a href="">Каталог2 кит2айских автомобилей</a></li>
+                                    <li><a href="">Каталог к2понских автомобилей</a></li>
+                                    <li><a href="">Каталог ам2ериканских автомобилей</a></li>
+                                    <li><a href="">Каталог мототехники</a></li>
+                                    <li><a href="">Каталог запч2астей для тракторов</a></li>
+                                    <li><a href="">Каталог запч2астей для грузовиков</a></li>
+                                    <li><a href="">Каталог запчастей для двигателей</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="banner __hero">
+            <img class="background" src="images/SecondBanner/LooperGroup_2 2.svg" alt="img">
+            <div class="content">
+                <h1>СФЕРА - инжиниринговая компания <br>полного цикла - от проектирования <br>до обслуживания</h1>
+                <div class="info-block">
+                    <p>Осуществляем работы по внутренним инженерным системам, сетям и коммуникациям зданий и сооружений под ключ в Москве и МО</p>
+                    <div class="button"><button onclick="popupSetting()">Получить предложение</button></div>
+
+                </div>
+            </div>
+        </section> 
+
+        <section class="limiter">
+            <div class="content">
+                <div class="item">
+                    <img src="images/limiter/1.svg" alt="vector">
+                    <h4>Быстрые сроки</h4>
+                    <p>Минимальные сроки разработки проектов от 2-х дней</p>
+                </div>
+                <div class="item">
+                    <img src="images/limiter/2.svg" alt="vector">
+                    <h4>Высокое качество</h4>
+                    <p>Наше проектирование отвечает самым высоким стандартам качества.</p>
+                </div>
+                <div class="item">
+                    <img src="images/limiter/3.svg" alt="vector">
+                    <h4>Лицензии и СРО</h4>
+                    <p>Компания "ООО СФЕРА" имеет все необходимые лицензии и членство в СРО для оказания услуг</p>
+                </div>
+                <div class="item">
+                    <img src="images/limiter/4.svg" alt="vector">
+                    <h4>Согласование документов</h4>
+                    <p>Мы берем на себя процесс согласования проектной документации</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="content">
+                <h3>Работая с нами, вы получаете <span>массу преимуществ</span></h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="images/advantages/1.svg" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/advantages/2.svg" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/advantages/3.svg" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/advantages/4.svg" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/advantages/5.svg" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/advantages/6.svg" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="benefit">
+            <img class="background" src="images/benefit/LooperGroup_3 1.svg" alt="img">
+            <div class="content">
+                <h3>Ваша выгода в цифрах:</h3>
+                <div class="grid">
+                    <div class="item">
+                        <p>на<span>6%</span></p>
+                        <img src="images/benefit/progress.svg" alt="vector">
+                        <p>Снижаем затраты на реализацию и эксплуатацию систем</p>
+                    </div>
+                    <div class="item">
+                        <p>на<span>32%</span></p>
+                        <img src="images/benefit/progress.svg" alt="vector">
+                        <p>Снижаем затраты на реализацию и эксплуатацию систем</p>
+                    </div>
+                    <div class="item">
+                        <p>на<span>6%</span></p>
+                        <img src="images/benefit/progress.svg" alt="vector">
+                        <p>Снижаем затраты на реализацию и эксплуатацию систем</p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+
+        <section class="team">
+            <div class="content">
+                <h3>Наша<span> команда</span></h3>
+
+                <div class="grid">
+                    <div class="item">
+                        <img src="images/team/team1.png" alt="team">
+                        <p>Анна Гофман</p>
+                        <span>Проектировщик</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/team/team2.png" alt="team2">
+                        <p>Александр Беркут</p>
+                        <span>Проектировщик</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/team/team3.png" alt="team3">
+                        <p>Анатолий Вахтин</p>
+                        <span>Проектировщик</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/team/team4.png" alt="team4">
+                        <p>Дмитрий Царев</p>
+                        <span>Проектировщик</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact"> 
+            <img class="background" src="images/contact/LooperGroup_1 2.svg" alt="line">
+            <div class="content">
+                <div class="info">
+                    <h3>Остались <span>вопросы?</span></h3>
+                    <p>Если остались вопросы, заполните форму и мы вам перезвоним</p>
+                
+                </div>
+                <form class="form" action="">
+                    <div class="row">
+                        <div class="form__group">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__group">
+                            <label for="phone">Телефон</label>
+                            <input type="text" name="phone" placeholder="+7 (---) --- -- --">
+                        </div>
+                    </div>
+                    <div class="button"><button>Оставить заявку</button></div>
+                    <span>Я соглашаюсь с условиями <span><a href="#">Политики обработки персональных данных</a></span> и <span><a href="#">Публичной офертой</a></span></span>
+                    
+                </form>
+            </div>
+        </section>
+
+        <div class="popup _popup-form">
+            <div class="popup__content">
+            <div class="popup__close" onclick="popupSetting()"><img src="images/vector/close.svg" alt="close"></div>
+                <h2 class="popup__title">Оставить заявку</h2>
+                <p class="popup__description">Оставьте заявку и мы кронсультируем вас по всем вопросам</p>
+                <form action="sendmail2.php" method="post" class="myForm">
+                    <div class="form__group"> 
+                        <label for="">Имя</label>
+                        <input type="text" class="form__input" id="user-name" name="user-name" required placeholder="Ваше имя">
+                    </div>
+                    <div class="form__group">
+                        <label for="">Телефон</label>
+                        <input type="tel" class="form__input phone" id="user-phone" name="user-phone" required placeholder="+7 (---) --- -- -- ">
+                    </div>
+                  
+                    <div class="button form__button">
+                        <button type="submit">Оставить заявку</button>
+                        <span>Я соглашаюсь с условиями <span><a href="#">Политики обработки персональных данных</a></span> и <span><a href="#">Публичной офертой</a></span></span>
+                    </div>
+                </form>
+
+
+            </div>
+        </div> 
+        <div class="popup __popup-thank">
+            <div class="popup__content">
+            <div class="popup__close" onclick="popupSetting()"><img src="images/closebug.svg" alt="close"></div>
+                <h2 class="popup__title">Спасибо!</h2>
+                <p class="popup__description">Ваша заявка успешно отправлена. 
+                    Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content">
+                <div class="grid">
+                    <div class="logo"><a href="index.html"><img src="images/vector/LogoWhite.svg" alt="g"></a></div>
+                    <ul class="navigation">
+                        <li><a href="#about">Преимущества</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#second">Проект перепланировки</a></li>
+                        <li><a href="#faq">ЧаВо</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                    <p class="phone"><a href="tel:+7 (800) 333-85-11">+7 (800) 333-85-11</a></p>
+                    <div class="social__list">
+                        <div class="vector"><a href="">
+                            <img src="images/vector/logos_whatsappHover.svg" alt="vectorWhatsapp">
+                        </a></div>
+                        <div class="vector"><a href="">
+                            <img src="images/vector/logos_telegramHover.svg" alt="vectorTelegram">
+                        </a></div>
+                    </div>
+                </div>
+                <h6>г. Москва, ул. Свободы д. 14 пом. II</h6>
+                <div class="item">
+                    <p>© СФЕРА 2023.  Все права защищены</p>
+                    <p><a href="#rules">Пользовательское соглашение</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <script src="js/popup.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/formFormat.js"></script>
+    
+    <script src="js/swiperDuble.js"></script>
+    <!-- <script src="js/animationProject.js"></script> -->
+    <script src="js/imageZoom.js"></script>
+
+
+    <!-- burgerServices, контроль дропменю в header 'все услуги' -->
+    <script src="js/burgerServices.js"></script>
+</html>
+

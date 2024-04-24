@@ -1,0 +1,97 @@
+.footer{
+    padding: 60px 0;
+    // margin-top: 100px;
+    background: #1B1B1B;
+    .content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        @media only screen and (max-width: 1023px) {
+            row-gap: 30px;
+        }
+        .item{
+            display: flex;
+            opacity: 0.6;
+            color: #fff;
+            column-gap: 16px;
+            font-size: 12px;
+            @media only screen and (max-width: 1023px) {
+                flex-direction: column;
+                row-gap: 32px;
+            }
+        }
+    }
+    .navigation{
+        display: flex;
+        column-gap: 26px;
+        @media only screen and (max-width: 1439px) {
+          order: 3;
+        }
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+        li{
+            font-size: 18px; 
+            opacity: 1;
+            transition: .3s;
+            color: #ffffff;
+            &:hover{
+                transition: .3s;
+                color: #3FAB60;
+            }
+        }
+    }
+    .grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media only screen and (max-width: 1439px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+        @media only screen and (max-width: 1023px) {
+            row-gap: 30px;
+        }
+    }
+    .phone{
+        color: #ffffff;
+        @media only screen and (max-width: 1439px) {
+            order: 2;
+        }
+    }
+    .phone, h6{
+
+        @media only screen and (max-width: 1023px) {
+            display: flex;
+            column-gap: 8px;
+            align-items: center;
+            &::before{
+                content: "";
+                width: 16px;
+                height: 16px;
+                background: #3FAB60;
+                border-radius: 50%;
+                display: block;
+            }
+        }
+    }
+
+    .social__list{
+        display: flex;
+        column-gap: 24px;
+        @media only screen and (max-width: 1023px) {
+           display: none;
+        }
+    } 
+    h6{
+        font-size: 20px;
+        line-height: 26px;
+        color: $White;
+        @media only screen and (max-width: 1023px) {
+            font-size: 18px;
+            line-height: 20px;
+            margin-top: -10px;
+        }
+    }
+}

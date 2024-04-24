@@ -1,0 +1,27 @@
+{% extends 'flatpages/default.html' %}
+{% load static %}
+{% block content %}
+        <section class="contact-pages">
+            <div class="content">
+                
+                <div class="block">
+                    <h3>Наши контакты</h3>
+                    <p>Адрес: г. Москва, ул. Свободы д. 14 пом. II</p>
+                    <p>Телефон: <a href="tel:+7 (800) 333-85-11">+7 (800) 333-85-11</a></p>
+                    <div class="vector"><a href="">
+<!--                         <img src="images/vector/logos_whatsapp-icon.svg" alt="vectorWhatsapp">-->
+                        <img src="{% static 'images/vector/logos_whatsappHover.svg' %}" alt="vectorWhatsapp">
+                    </a></div>
+                </div>
+
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaeb5ea677654df58cb0f11bdeee18c351d932fe9556fe234f5cbbb0892332114&amp;width=800&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </section>
+
+
+
+{% include 'flatpages/elements/black_form.html' %}
+{% include 'flatpages/elements/popup_form.html' %}
+{% endblock content %}

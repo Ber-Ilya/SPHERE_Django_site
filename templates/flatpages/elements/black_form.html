@@ -1,0 +1,36 @@
+{% load static %}
+
+        <section class="contact __dark" id="contact">
+            <img class="background" src="{% static 'images/contact/LooperGroup_1 2.svg' %}" alt="line">
+            <div class="content">
+                <div class="info">
+                    <h3>Остались <span>вопросы?</span></h3>
+                    <p>Если остались вопросы, заполните форму и мы вам перезвоним</p>
+
+                </div>
+                <form class="form" action="{% url 'home' %}" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form__group">
+                        <label for="id_name_popup">Имя</label>
+                        <input type="text" id="id_name_popup" name="name_popup" placeholder="Ваше имя" value="{{ form.name_popup.value|default_if_none:'' }}" class="form__input">
+                        {% if form.name_popup.errors %}
+                            <div class="errors">{{ form.name_popup.errors.as_text }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="form__group">
+                        <label for="id_phone_popup">Телефон</label>
+                        <input type="text" id="id_phone_popup" name="phone_popup" placeholder="+7 (---) --- -- --" value="{{ form.phone_popup.value|default_if_none:'' }}" class="form__input phone">
+                        {% if form.phone_popup.errors %}
+                            <div class="errors">{{ form.phone_popup.errors.as_text }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="form__button">Оставить заявку</button>
+                </div>
+                <input type="hidden" name="form_type" value="popup_form">
+                <span>Я соглашаюсь с условиями <a href="#" style="color:white !important;">Политики обработки персональных данных</a> и <a href="#" style="color:white !important;">Публичной офертой</a></span>
+        </form>
+            </div>
+        </section>

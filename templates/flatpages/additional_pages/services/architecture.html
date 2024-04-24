@@ -1,0 +1,175 @@
+{% extends 'flatpages/default.html' %}
+{% block seo %}
+    <meta name="title" content="Архитектурное проектирование от ООО 'СФЕРА'">
+    <meta name="description" content="Профессиональное архитектурное проектирование: разработка документации, подготовка проектов зданий, организация строительства и дизайн помещений.">
+    <meta name="keywords" content="архитектурное проектирование, разработка проектной документации, архитектурные проекты, строительство, дизайн помещений">
+{% endblock seo %}
+{% load static %}
+
+{% block content %}
+
+        <section class="banner __duble">
+            <div class="content">
+                <div class="info-block">
+                    <h2>Проектирование зданий и сооружений</h2>
+                    <p>Качественное и эффективное проектирование объектов любой степени сложности в кратчайшие сроки.</p>
+                    <div class="button"><button>Получить предложение</button></div>
+                </div>
+                <div class="image"><img src="{% static 'images/pages/Rectangle 28-6.jpg' %}" alt="img"></div>
+            </div>
+        </section>
+
+
+        <section class="complex-design-services">
+            <div class="content">
+                <h3>Предоставляем комплекс услуг по проектированию</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Архитектурное проектирование</h4>
+                        <ul>
+                            <li>Подготовка архитектурных чертежей и планов всех этажей здания</li>
+                            <li>Проработка фасадов и внутреннего пространства здания</li>
+                            <li>Разработка деталей архитектурного оформления и декора.</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Инженерное проектирование</h4>
+                        <ul>
+                            <li>Проектирование систем вентиляции, кондиционирования, отопления и электроснабжения.</li>
+                            <li>Расчет и проектирование инженерных сетей (водоснабжение, канализация и др.)</li>
+                            <li>Учет требований по пожарной безопасности и энергоэффективности.</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Строительное проектирование</h4>
+                        <ul>
+                            <li>Разработка строительных чертежей и спецификаций материалов.</li>
+                            <li>Подготовка технической документации для строительства здания.</li>
+                            <li>Участие в согласовании проектной документации с государственными органами и экспертизами.</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'images/pages/LooperGroup_1 1.svg' %}" alt="line" class="backdrop">
+                        <img src="{% static 'images/vector/accept.svg' %}" alt="gg" class="vector">
+                        <h4>Сопровождение проекта</h4>
+                        <ul>
+                            <li>Консультации и согласование с заказчиком на всех этапах проектирования.</li>
+                            <li>Контроль за исполнением проекта строительными подрядчиками.</li>
+                            <li>Контроль за исполнением проекта строительными подрядчиками.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="service-cost">
+            <img src="{% static 'images/pages/looper_Cost.svg' %}" alt="cost" class="looper">
+            <div class="content">
+                <h3>Стоимость наших услуг</h3>
+                <div class="grid">
+                    <div class="item">
+                        <h4>Архитектурное проектирование</h4>
+                        <div class="line"></div>
+                        <p>Цена от 50 руб/м2</p>
+                    </div>
+                    <div class="item">
+                        <h4>Строительство зданий</h4>
+                        <div class="line"></div>
+                        <p>Цена от 12.700 руб/м2</p>
+                    </div>
+                    <div class="item">
+                        <h4>Торговые павильоны</h4>
+                        <div class="line"></div>
+                        <p>Цена от 8.000 руб/м2</p>
+                    </div>
+                    <div class="item">
+                        <h4>Изготовление и монтаж складов и складских комплексов</h4>
+                        <div class="line"></div>
+                        <p>Цена от 7.900 руб/м2</p>
+                    </div>
+                    <div class="item">
+                        <h4>Быстровозводимые здания, общежития, вахты, офисы</h4>
+                        <div class="line"></div>
+                        <p>Цена от 8.000 руб</p>
+                    </div>
+                    <div class="item">
+                        <h4>Возведение монолитных конструкций</h4>
+                        <div class="line"></div>
+                        <p>Цена от 12.000 руб/м3</p>
+                    </div>
+                </div>
+                <div class="button"><button>Получить расчет</button></div>
+            </div>
+        </section>
+
+        <section class="implemented-projects">
+            <div class="content">
+                <h3>Реализованные проекты</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 43.png' %}" alt="img">
+                        <p>Завод по производству стальных панельных радиаторов</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 44.png' %}" alt="img">
+                        <p>Проект на реконструкцию производственного здания</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 45.png' %}" alt="img">
+                        <p>Проект склада площадью до 1500 м.кв. в п. Щепкин, Ростовской области</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages __change">
+            <div class="content">
+                <h3>Мы качественно следим за каждым этапом работы, чтобы результат был идеален</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/advantages/1.svg' %}" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/2.svg' %}" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/3.svg' %}" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/4.svg' %}" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/5.svg' %}" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/6.svg' %}" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% include 'flatpages/elements/faq.html' %}
+{% include 'flatpages/elements/black_form.html' %}
+
+{% endblock content %}

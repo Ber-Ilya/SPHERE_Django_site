@@ -1,0 +1,78 @@
+.complex-design-services{
+    margin-top: 100px;
+    @media only screen and (max-width: 1023px) {margin-top: 64px;}
+    .grid{
+        margin-top: 40px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        @media only screen and (max-width: 1023px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .item{
+        padding: 30px 30px 64px;
+        border-radius: 20px;
+        @media only screen and (max-width: 1023px) {
+            border-radius: 12px;
+            padding: 24px 24px 42px;
+        }
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+
+        row-gap: 10px;
+        
+        position: relative;
+
+        background: #F5F5F5;
+    }   
+
+    .backdrop{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        object-fit: contain;
+
+        width: 270px;
+        height: 85px;
+    }
+
+    .vector{
+        margin-bottom: 30px;
+
+        width: 64px;
+        height: 64px;
+        img{
+            object-fit: contain;
+        }
+        @media only screen and (max-width: 767px) {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    h4{
+        font-family: g-m;
+        font-size: 22px;
+        @media only screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        margin-top: 5px;
+        li{
+            color: #657186;
+            font-family: g-m;
+            
+        }
+    }
+
+}

@@ -1,0 +1,138 @@
+{% extends 'flatpages/default.html' %}
+{% block seo %}
+<meta name="title" content="Подбор зданий и помещений для бизнеса и жилья от ООО 'СФЕРА'">
+<meta name="description" content="Профессиональный подбор коммерческой и жилой недвижимости, включая консультации по оптимальным районам и юридическое сопровождение сделок.">
+<meta name="keywords" content="подбор недвижимости, коммерческая недвижимость, жилая недвижимость, офисные помещения, юридическое сопровождение">
+
+{% endblock seo %}
+{% load static %}
+{% block content %}
+
+        <section class="banner __duble">
+            <div class="content">
+                <div class="info-block">
+                    <h2>Подбор зданий и помещений</h2>
+                    <div class="button"><button onclick="openPopup('.popup._popup-form')">Получить предложение</button></div>
+                    {% include "flatpages/elements/popup_form.html" %}
+                </div>
+                <div class="image"><img src="{% static 'images/ItemServices/Rectangle 28-10.png' %}" alt="img"></div>
+            </div>
+        </section>
+
+
+        <section class="services-offered cv-4">
+            <div class="content">
+                <h3>Наши услуги включают в себя:</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle31.png' %}" alt="g">
+                        <p>Поиск и аренда/покупка офисных зданий и помещений</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle32.png' %}" alt="g">
+                        <p>Помощь в выборе коммерческой недвижимости для ресторанов, магазинов и других предприятий</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle33.png' %}" alt="g">
+                        <p>Консультации по лучшим районам для вашего бизнеса и оценке потенциала недвижимости</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle34.png' %}" alt="g">
+                        <p>Поддержка на всех этапах сделки, включая юридическое сопровождение</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="rosreestr-approval-process cv-4">
+            <div class="content">
+                <h3>Процесс составления межевого плана</h3>
+                <div class="row">
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec.svg' %}" alt="vector" class="vector">
+                        <h4>Обследование участка</h4>
+                        <p>Наши специалисты проводят обследование земельного участка для определения его границ и особенностей.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec2.svg' %}" alt="vector" class="vector">
+                        <h4>Сбор данных и измерения</h4>
+                        <p>Мы собираем необходимые данные и проводим геодезические измерения для составления межевого плана.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec3.svg' %}" alt="vector" class="vector">
+                        <h4>Составление документации</h4>
+                        <p>На основе полученных данных составляется межевой план с указанием границ и характеристик участка.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec4.svg' %}" alt="vector" class="vector">
+                        <h4>Утверждение и регистрация</h4>
+                        <p>Межевой план утверждается соответствующими органами и подается на регистрацию.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="implemented-projects">
+            <div class="content">
+                <h3>Реализованные проекты</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 43.png' %}" alt="img">
+                        <p>Завод по производству стальных панельных радиаторов</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 44.png' %}" alt="img">
+                        <p>Проект на реконструкцию производственного здания</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 45.png' %}" alt="img">
+                        <p>Проект склада площадью до 1500 м.кв. в п. Щепкин, Ростовской области</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages __change">
+            <div class="content">
+                <h3>Мы качественно следим за каждым этапом работы, чтобы результат был идеален</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/advantages/1.svg' %}" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/2.svg' %}" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/3.svg' %}" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/4.svg' %}" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/5.svg' %}" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/6.svg' %}" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% include 'flatpages/elements/faq.html' %}
+{% include 'flatpages/elements/form_and_image.html' %}
+{% endblock content %}

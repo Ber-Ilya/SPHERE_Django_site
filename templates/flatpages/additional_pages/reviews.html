@@ -1,0 +1,167 @@
+{% extends 'flatpages/default.html' %}
+{% load static %}
+{% block head %}
+<head>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        {% block seo %}
+      <title>Сфера</title>
+      {% endblock seo %}
+<link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
+<script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
+</head>
+{% endblock head %}
+{% block content %}
+
+        <section class="banner _half">
+            <img class="background" src="images/case/LooperGroup_3.svg" alt="img">
+            <div class="content">
+                <div class="info-block">
+                    <h3>Отзывы</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="content">
+                <h3>Насколько вам понравилось<br>работать с нами?</h3>
+
+              <form method="POST" action="">
+    {% csrf_token %}
+    <fieldset>
+        <legend><h1>Насколько вам понравилось работать с нами?</h1></legend>
+        <!-- Здесь отобразятся поля формы -->
+        {{ form.as_ul }}
+        <button type="submit">Отправить</button>
+    </fieldset>
+</form>
+
+
+
+            </div>        </section>
+
+<!--               <div class="grid">-->
+<!--                <div class="chat">-->
+<!--                    <div class="hero-rating">-->
+<!--                        <h3>5.0</h3>-->
+<!--                        <img src="images/reviews/starsUp.svg" alt="g">-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 1 &ndash;&gt;-->
+<!--                    <div class="chat-block">-->
+<!--                        <div class="chat-avatar"><img src="images/reviews/Avatar.png" alt="lic"></div>-->
+<!--                        <div class="chat-description">-->
+<!--                            <h6>Кристина Антонова</h6>-->
+<!--                            <div class="grade-block">-->
+
+<!--                                <img src="images/reviews/starsUp.svg" alt="gg">-->
+<!--                                <div class="date">03/03/2024</div>-->
+<!--                            </div>-->
+<!--                            <p>-->
+<!--                                Сотрудничество с компанией по разработке сайтов было на высшем уровне.-->
+<!--                                Профессиональная команда оперативно реагировала на все наши запросы и-->
+<!--                                предложения, результат превзошел наши ожидания. Очень довольны результатом-->
+<!--                                и рекомендуем всем!-->
+<!--                            </p>-->
+<!--                            <div class="chat-block__footer">-->
+<!--                                <div class="comment">Комментировать</div>-->
+<!--                                <div class="reaction">-->
+<!--                                    <div class="positive"><img src="images/reviews/mdi_thumbs-up.svg" alt="ico">0</div>-->
+<!--                                    <div class="negative"><img src="images/reviews/mdi_thumbs-up.svg" alt="ico">0</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 2 &ndash;&gt;-->
+<!--                    <div class="chat-block">-->
+<!--                        <div class="chat-avatar"><img src="images/reviews/Avatar.png" alt="lic"></div>-->
+<!--                        <div class="chat-description">-->
+<!--                            <h6>Кристина Антонова</h6>-->
+<!--                            <div class="grade-block">-->
+<!--                                <img src="images/reviews/starsUp.svg" alt="gg">-->
+<!--                                <div class="date">03/03/2024</div>-->
+<!--                            </div>-->
+<!--                            <p>-->
+<!--                                Сотрудничество с компанией по разработке сайтов было на высшем уровне.-->
+<!--                                Профессиональная команда оперативно реагировала на все наши запросы и-->
+<!--                                предложения, результат превзошел наши ожидания. Очень довольны результатом-->
+<!--                                и рекомендуем всем!-->
+<!--                            </p>-->
+<!--                            <div class="chat-block__footer">-->
+<!--                                <div class="comment">Комментировать</div>-->
+<!--                                <div class="reaction">-->
+<!--                                    <div class="positive"><img src="images/reviews/mdi_thumbs-up.svg" alt="ico">0</div>-->
+<!--                                    <div class="negative"><img src="images/reviews/mdi_thumbs-up.svg" alt="ico">0</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 3 &ndash;&gt;-->
+<!--                    <div class="chat-block">-->
+<!--                        <div class="chat-avatar"><img src="images/reviews/Avatar.png" alt="lic"></div>-->
+<!--                        <div class="chat-description">-->
+<!--                            <h6>Кристина Антонова</h6>-->
+<!--                            <div class="grade-block">-->
+<!--                                <img src="images/reviews/starsUp.svg" alt="gg">-->
+<!--                                <div class="date">03/03/2024</div>-->
+<!--                            </div>-->
+<!--                            <p>-->
+<!--                                Сотрудничество с компанией по разработке сайтов было на высшем уровне.-->
+<!--                                Профессиональная команда оперативно реагировала на все наши запросы и-->
+<!--                                предложения, результат превзошел наши ожидания. Очень довольны результатом-->
+<!--                                и рекомендуем всем!-->
+<!--                            </p>-->
+<!--                            <div class="chat-block__footer">-->
+<!--                                <div class="comment">Комментировать</div>-->
+<!--                                <div class="reaction">-->
+<!--                                    <div class="positive"><img src="images/reviews/mdi_thumbs-up.svg" alt="ico">0</div>-->
+<!--                                    <div class="negative"><img src="images/reviews/mdi_thumbs-up.svg" alt="ico">0</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+<!--                <div class="send-block">-->
+<!--                    <div class="button __violet"><button>Оставить отзыв</button></div>-->
+<!--                    <p>Отзывы с оценкой</p>-->
+<!--                    <img src="images/reviews/Frame 4.svg" alt="group">-->
+<!--                </div>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+
+<!--        <section class="contact" id="contact">-->
+<!--            <img class="background" src="images/contact/LooperGroup_1 2.svg" alt="line">-->
+<!--            <div class="content">-->
+<!--                <div class="info">-->
+<!--                    <h3>Остались <span>вопросы?</span></h3>-->
+<!--                    <p>Если остались вопросы, заполните форму и мы вам перезвоним</p>-->
+<!--                </div>-->
+<!--                <form class="form" action="">-->
+<!--                    <div class="row">-->
+<!--                        <div class="form__group">-->
+<!--                            <label for="name">Имя</label>-->
+<!--                            <input type="text" name="name" placeholder="Ваше имя">-->
+<!--                        </div>-->
+<!--                        <div class="form__group">-->
+<!--                            <label for="phone">Телефон</label>-->
+<!--                            <input type="text" name="phone" placeholder="+7 (-&#45;&#45;) -&#45;&#45; &#45;&#45; &#45;&#45;">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="button"><button>Оставить заявку</button></div>-->
+<!--                    <span>Я соглашаюсь с условиями <span><a href="#">Политики обработки персональных данных</a></span> и <span><a href="#">Публичной офертой</a></span></span>-->
+
+<!--                </form>-->
+<!--            </div>-->
+<!--        </section>-->
+
+{% endblock content %}

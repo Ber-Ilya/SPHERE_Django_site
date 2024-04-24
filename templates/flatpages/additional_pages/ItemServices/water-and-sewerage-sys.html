@@ -1,0 +1,143 @@
+{% extends 'flatpages/default.html' %}
+{% block seo %}
+<meta name="title" content="Монтаж систем водоснабжения – Профессиональное Проектирование и Установка">
+<meta name="description" content="ООО 'ЭнергоТех' предлагает услуги по монтажу систем водоснабжения, начиная от проектирования и заканчивая полной установкой систем на объектах любой сложности.">
+<meta name="keywords" content="монтаж систем водоснабжения, проектирование водоснабжения, установка систем водоснабжения">
+{% endblock seo %}
+{% load static %}
+{% block content %}
+
+        <section class="banner __duble">
+            <div class="content">
+                <div class="info-block">
+                    <h2>Монтаж систем водоснабжения</h2>
+                    <div class="button"><button onclick="openPopup('.popup._popup-form')">Получить предложение</button></div>
+                    {% include "flatpages/elements/popup_form.html" %}
+                </div>
+                <div class="image"><img src="{% static 'images/ItemServices/Rectangle 28.png' %}" alt="img"></div>
+            </div>
+        </section>
+
+        <section class="services-offered">
+            <div class="content">
+                <h3>Предоставляем комплекс услуг</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 675.png' %}" alt="g">
+                        <h4>Проектирование систем</h4>
+                        <p>Проектная деятельность по созданию новых объектов и реконструкции существующих.
+                            Это включает анализ площадки, учет пожеланий заказчика и соблюдение стандартов строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 675-2.png' %}" alt="g">
+                        <h4>Проектирование систем</h4>
+                        <p>Проектная деятельность по созданию новых объектов и реконструкции существующих.
+                            Это включает анализ площадки, учет пожеланий заказчика и соблюдение стандартов строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 675-1.png' %}" alt="g">
+                        <h4>Проектирование систем</h4>
+                        <p>Проектная деятельность по созданию новых объектов и реконструкции существующих.
+                            Это включает анализ площадки, учет пожеланий заказчика и соблюдение стандартов строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/ItemServices/Rectangle 675-3.png' %}" alt="g">
+                        <h4>Проектирование систем</h4>
+                        <p>Проектная деятельность по созданию новых объектов и реконструкции существующих.
+                            Это включает анализ площадки, учет пожеланий заказчика и соблюдение стандартов строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="rosreestr-approval-process cv-4">
+            <div class="content">
+                <h3>Как мы работаем</h3>
+                <div class="row">
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec.svg' %}" alt="vector" class="vector">
+                        <h4>Оставьте заявку</h4>
+                        <p>Вы можете оставить заявку или позвонить по телефону</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec2.svg' %}" alt="vector" class="vector">
+                        <h4>Выезд инженера</h4>
+                        <p>Замер помещения и разработка технического решения</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec3.svg' %}" alt="vector" class="vector">
+                        <h4>Производство</h4>
+                        <p>Производство инженерных систем и поставка оборудования</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/vec4.svg' %}" alt="vector" class="vector">
+                        <h4>Выполнение работ</h4>
+                        <p>Монтажные и пуско-наладочные работы</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="implemented-projects">
+            <div class="content">
+                <h3>Реализованные проекты</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 43.png' %}" alt="img">
+                        <p>Завод по производству стальных панельных радиаторов</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 44.png' %}" alt="img">
+                        <p>Проект на реконструкцию производственного здания</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/pages/implemented/Rectangle 45.png' %}" alt="img">
+                        <p>Проект склада площадью до 1500 м.кв. в п. Щепкин, Ростовской области</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages __change">
+            <div class="content">
+                <h3>Мы качественно следим за каждым этапом работы, чтобы результат был идеален</h3>
+                <div class="grid">
+                    <div class="item">
+                        <img src="{% static 'images/advantages/1.svg' %}" alt="vector">
+                        <h4>Согласование Комплексный подход</h4>
+                        <p>Предлагаем полный цикл: от проектирования до строительства.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/2.svg' %}" alt="vector">
+                        <h4>Минимальные сроки</h4>
+                        <p>Единая работа отделов исключает задержки, обеспечивает быстрый переход между этапами.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/3.svg' %}" alt="vector">
+                        <h4>Согласование документов</h4>
+                        <p>Цены наших услуг оптимальны для высокого качества проектирования, доступного клиентам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/4.svg' %}" alt="vector">
+                        <h4>Проверенное качество</h4>
+                        <p>Надежные партнеры: 200+ успешных проектов для крупных заказчиков, частных и государственных.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/5.svg' %}" alt="vector">
+                        <h4>Опытная команда</h4>
+                        <p>Профессиональная команда с глубоким опытом гарантирует высокое качество и соответствие стандартам.</p>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'images/advantages/6.svg' %}" alt="vector">
+                        <h4>Юридическое соответствие</h4>
+                        <p>Обеспечиваем юридическое соответствие и надежность каждого объекта в процессе строительства.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% include 'flatpages/elements/faq.html' %}
+{% include 'flatpages/elements/form_and_image.html' %}
+{% endblock content %}
